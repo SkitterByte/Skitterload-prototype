@@ -1,0 +1,1 @@
+import{nt as e,tt as t,z as n}from"./CjDJzC31.js";var r=new class{#e=e(null);get request(){return n(this.#e)}set request(e){t(this.#e,e,!0)}#t=e(!1);get justStarted(){return n(this.#t)}set justStarted(e){t(this.#t,e,!0)}set(e){this.request=e}clear(){this.request=null}consumeJustStarted(){let e=this.justStarted;return this.justStarted=!1,e}};export{r as t};

@@ -1,0 +1,1 @@
+var e=`https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/`;function t(t){return(t??[]).map(t=>`${e}${t}`)}export{t};

@@ -1,0 +1,1 @@
+export const env={"PUBLIC_API_BASE_URL":"http://localhost:3300","PUBLIC_CLERK_PUBLISHABLE_KEY":"pk_test_bGFzdGluZy1ib25lZmlzaC01Ny5jbGVyay5hY2NvdW50cy5kZXYk"}

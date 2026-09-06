@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="robots" content="noindex, nofollow, noarchive" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="text-scale" content="scale" />
+		<meta name="theme-color" content="#0a0a0a" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="Skitterload" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/icon-192.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+		/>
+		<script>
+			// Resolve theme before paint so we don't flash the wrong palette.
+			(function () {
+				try {
+					var stored = localStorage.getItem('skitterload-theme');
+					var theme =
+						stored === 'light' || stored === 'dark'
+							? stored
+							: window.matchMedia('(prefers-color-scheme: dark)').matches
+								? 'dark'
+								: 'light';
+					document.documentElement.setAttribute('data-theme', theme);
+				} catch (_) {
+					document.documentElement.setAttribute('data-theme', 'light');
+				}
+			})();
+		</script>
+		<link href="/Skitterload-prototype/_app/immutable/entry/start.BNurDvm5.js" rel="modulepreload">
+		<link href="/Skitterload-prototype/_app/immutable/chunks/DHGmvCBO.js" rel="modulepreload">
+		<link href="/Skitterload-prototype/_app/immutable/chunks/CjDJzC31.js" rel="modulepreload">
+		<link href="/Skitterload-prototype/_app/immutable/entry/app.BiU0BleV.js" rel="modulepreload">
+		<link href="/Skitterload-prototype/_app/immutable/chunks/DOiM1DqK.js" rel="modulepreload">
+		<link href="/Skitterload-prototype/_app/immutable/chunks/f23f8hhM.js" rel="modulepreload">
+		<link href="/Skitterload-prototype/_app/env.js" rel="modulepreload">
+		
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_l97cta = {
+						base: "/Skitterload-prototype",
+						assets: "/Skitterload-prototype",
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("/Skitterload-prototype/_app/env.js").then(({ env }) => {
+						__sveltekit_l97cta.env = env;
+
+						Promise.all([
+							import("/Skitterload-prototype/_app/immutable/entry/start.BNurDvm5.js"),
+							import("/Skitterload-prototype/_app/immutable/entry/app.BiU0BleV.js")
+						]).then(([kit, app]) => {
+							kit.start(app, element);
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

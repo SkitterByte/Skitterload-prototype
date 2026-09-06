@@ -1,0 +1,1 @@
+function e(t){return t.some(t=>t.kind===`repeat`?e(t.steps):!0)}export{e as t};
